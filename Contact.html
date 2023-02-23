@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+  <style>
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 40px;
+      background-color: #ecd6c7;
+    }
+
+    ul li {
+      list-style: none;
+      text-decoration: none;
+      margin: 23px 9px;
+
+    }
+
+    ul li a {
+      color: #384158;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 76px;
+
+    }
+
+    .carts {
+      margin: 23px;
+    }
+
+    .logo img {
+      height: 74px;
+      width: 132px;
+    }
+
+    .hero {
+      background-image: url(hero.png);
+      height: 90vh;
+      background-size: cover;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      background-color: #f1ede6;
+      margin-top: 63px;
+    }
+
+    #in {
+      font-size: 24px;
+      width: 40%;
+      padding: 5px;
+    }
+
+    @media (max-width:1400px) {
+      #in {
+        width: 60%;
+      }
+    }
+
+    h4 {
+      font-size: 22px;
+    }
+
+    button {
+      padding: 12px;
+      width: 101px;
+      background-color: #472c1c;
+      font-size: 18px;
+      color: white;
+      margin-bottom: 27px;
+      border: none;
+      outline: none;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
+    #form-p {
+      margin-top: 40px;
+    }
+
+    .segments p1 {
+      font-size: 40px;
+    }
+
+    .icon-seg {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 2px;
+    }
+
+    .icon-seg i {
+      color: #472c1c;
+    }
+  </style>
+  <link rel="stylesheet" href="c.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="logo.png" class="logo" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="offers.html">offers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
+          viewBox="0 0 16 16">
+          <path
+            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+        </svg>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="contact">
+    <div class="images">
+      <h1>#Let's talk</h1>
+    </div>
+
+    <div class="segments">
+      <div class="seconds">
+        <p1>GET IN TOUCH</p1><br><br>
+        <h3>Visit one of our agency locations or contact us today</h3><br>
+        <h3>Head Office</h3><br>
+        <div class="icon-seg">
+          <p><i class="fa-solid fa-house-chimney"></i> &nbsp;56 Street Andy Worli Bastain</p>
+          <p><i class="fa-solid fa-envelope"></i> &nbsp;andy@gmail.com</i></p>
+          <p><i class="fa-solid fa-phone"></i> &nbsp; 9752263722</p>
+        </div>
+      </div>
+
+      <div class="first">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15079.242903536244!2d72.83972019999999!3d19.115957599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1676136270811!5m2!1sen!2sin"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+
+    <!-- form issue -->
+    <div class="form">
+      <p id="form-p">Leave Message</p>
+      <h4>We love to hear you</h4>
+      <input type="text" name="myName" id="in" placeholder="Your Name">
+      <input type="email" name="myEmail" id="in" placeholder="E-mail">
+      <input type="text" name="mySub" id="in" placeholder="Subject">
+      <textarea cols="22" rows="9" id="in" placeholder="Your message"></textarea>
+      <button>Submit</button>
+    </div>
+  </div>
+</body>
+
+</html>

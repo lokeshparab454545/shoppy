@@ -1,0 +1,46 @@
+/* .img {
+    background-image: url("https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/main/img/banner/b2.jpg");
+    height: 290px;
+    background-size: cover;
+    width: 100% !important;
+} */
+
+/* 
+h1 {
+    color: white !important;
+    text-align: center;
+    line-height: 5.9em !important;
+} */
+
+span {
+    color: brown;
+}
+
+.box {
+    border: 2px solid red;
+    display: flex;
+    gap: 53px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.boxes {
+    border: 2px solid red;
+    border-radius: 12px;
+    background-color: #fff;
+    text-align: center;
+    width: 220px;
+    cursor: pointer;
+}
+
+#one{
+    background: url('https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/main/img/banner/b17.jpg');
+}
+
+.images{
+    background-image: url("https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/main/img/about/banner.png");
+    height: 290px;
+    background-size: cover;
+    width: 100% !important;
+}

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+        }
+
+        .imagess img {
+            border-radius: 22px;
+            margin-top: 10px;
+            margin-left: 12px;
+            height: 425px;
+            width: 320px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .feat {
+
+            margin-top: 212px;
+        }
+
+        section h1 {
+            font-size: 35px;
+            text-align: center;
+            margin-top: 180px;
+            margin-bottom: 24px;
+        }
+
+        section p {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .pro {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 16px;
+            width: 345px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pro-elem {
+            margin-left: 17px;
+        }
+
+        .cart {
+            top: -46px;
+            position: relative;
+            padding: 12px;
+            left: 75%;
+            background-color: #cbcbcb;
+            border-radius: 48%;
+            width: 13%;
+        }
+
+        .fal {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .star i {
+            color: yellowgreen;
+        }
+
+        /* navbar */
+
+        /* offers */
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            background-repeat: no-repeat;
+            justify-content: center;
+            margin-top: 52px;
+            gap: 20px;
+        }
+
+        .ts {
+            background-image: url(https://cdn.shopify.com/s/files/1/0905/2012/files/H09.jpg?v=1603445086);
+            display: flex;
+            background-size: cover;
+            flex-direction: column;
+            width: 434px;
+            height: 485px;
+            justify-content: flex-end;
+            padding: 6px;
+            text-align: end;
+
+        }
+
+
+        .dn {
+            background-image: url(https://cdn.shopify.com/s/files/1/0905/2012/files/H05_e363d3f3-52dc-431b-b333-d541c7005f69.jpg?v=1603445087);
+            display: flex;
+            background-size: cover;
+            flex-direction: column;
+            width: 434px;
+            height: 485px;
+            justify-content: flex-end;
+            padding: 6px;
+            text-align: end;
+        }
+
+
+        .ne {
+            background-image: url(https://cdn.shopify.com/s/files/1/0905/2012/files/H08.jpg?v=1603445086);
+            display: flex;
+            background-size: cover;
+            flex-direction: column;
+            width: 434px;
+            height: 485px;
+            justify-content: flex-end;
+            padding: 6px;
+            text-align: end;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+
+        /* navbar */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item a {
+            font-size: 21px;
+            margin: auto 24px;
+        }
+
+        .container-fluid a {
+            margin-right: 45px;
+        }
+
+        a:hover {
+            color: brown;
+            font-weight: bold;
+        }
+
+        .logo {
+            height: 74px;
+            width: 132px;
+        }
+
+        .shop svg {
+            height: 33px;
+            width: 197px;
+        }
+
+
+        .box {
+            color: white;
+            text-shadow: 0.2px 1px #181818;
+        }
+
+        main {
+            background: url('https://cdn.shopify.com/s/files/1/0905/2012/files/Slide02.jpg?v=1603445094');
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0;
+            width: 100vw;
+            background-size: cover;
+            height: 100vh;
+            background-position: right;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 40px;
+        }
+
+        .left p {
+            font-size: 18px;
+        }
+
+        .left h1 {
+            font-size: 43px;
+        }
+
+        .left button {
+            padding: 15px;
+            background-color: #472c1c;
+            font-size: 18px;
+            color: white;
+            margin-bottom: 27px;
+            border: none;
+            outline: none;
+            border-radius: 14px;
+        }
+
+        span h2 {
+            color: #472c1c;
+        }
+
+        .tp p {
+            /* color: white; */
+        }
+
+        @media (max-width: 1200px) {
+            main {
+                background-position: right 10%;
+                background-size: contain;
+            }
+
+            .left {
+                justify-content: flex-end;
+                align-items: flex-end;
+                width: 100vw;
+                margin-left: 0;
+                padding-right: 20px;
+            }
+        }
+
+        @media (max-width:370px) {
+            .left {
+                line-height: 1px;
+                top: 26px;
+                left: 14px;
+            }
+
+            .span h2 {
+                font-size: 16px;
+            }
+
+            .left p {
+                font-size: 12px;
+            }
+
+            h2 {
+                font-size: 14px;
+            }
+
+            .left button {
+                padding: 8px;
+                font-size: 11px;
+                margin-left: -2px;
+                width: 74px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="logo.png" class="logo" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="offers.html">offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="tp">
+            <div class="left">
+                <p>trade-in-offer</p>
+                <h2>Super value deals</h2>
+                <span>
+                    <h2>On all products</h2>
+                </span>
+                <p2>Save more up to 70%</p2><br>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </main>
+
+    <section class="feat">
+        <h1>Featured Products</h1>
+        <p>New arrivals</p>
+        <div class="products">
+            <div class="pro" onclick="window.location.href='one.html'">
+                <div class="imagess">
+                    <img src="https://images.bewakoof.com/t640/men-s-green-jesus-said-just-chill-graphic-printed-oversized-sweatshirt-564926-1672129287-1.jpg"
+                        alt="">
+                </div>
+
+                <div class="pro-elem"><br>
+                    <div class="title">adidas</div>
+                    <div class="heading">Cartoon Astronaut T-shirts</div>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="rupay">₹1000</div>
+                    <div class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart4" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg></div>
+                </div>
+            </div>
+
+            <div class="pro" onclick="window.location.href='two.html'">
+                <div class="imagess">
+                    <img src="https://images.bewakoof.com/t320/men-s-green-lost-reality-typography-super-loose-fit-hoodie-504132-1670935974-1.jpg"
+                        alt="">
+                </div>
+
+                <div class="pro-elem"><br>
+                    <div class="title">adidas</div>
+                    <div class="heading">Cartoon Astronaut T-shirts</div>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="rupay">₹1000</div>
+                    <div class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart4" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg></div>
+                </div>
+            </div>
+
+            <div class="pro" onclick="window.location.href='three.html'">
+                <div class="imagess">
+                    <img src="https://images-do.nyc3.cdn.digitaloceanspaces.com/lAVtCJXFVr/product_images/1622185457.BKT00109.jpeg"
+                        alt="">
+                </div>
+
+                <div class="pro-elem"><br>
+                    <div class="title">adidas</div>
+                    <div class="heading">Cartoon Astronaut T-shirts</div>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="rupay">₹1000</div>
+                    <div class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart4" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg></div>
+                </div>
+            </div>
+
+            <div class="pro" onclick="window.location.href='four.html'">
+                <div class="imagess">
+                    <img src="https://images.bewakoof.com/t640/men-black-aop-oversized-hoodie-504083-1669641674-1.jpg"
+                        alt="">
+                </div>
+
+                <div class="pro-elem"><br>
+                    <div class="title">adidas</div>
+                    <div class="heading">Cartoon Astronaut T-shirts</div>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="rupay">₹1000</div>
+                    <div class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart4" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- offers -->
+    <section class="offers">
+        <h1>New Offers</h1>
+        <div class="box">
+            <div class="ts">
+                <h2>SEASONAL SALE</h2>
+                <p2>the best collection here on sale</p2>
+            </div>
+
+
+            <div class="dn">
+                <h2>GET CLASSY LOOK</h2>
+                <p2>the best classic dress is on sale</p2>
+            </div>
+
+
+            <div class="ne">
+                <h2>JACKETS</h2>
+                <p2>Best quality leathery jackets</p2>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <body>
+
+</html>
